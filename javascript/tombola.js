@@ -2,6 +2,7 @@ const tabellone = document.getElementById("tabellone");
 const button = document.getElementById("genButton");
 
 let token = [];
+let randomToken = [];
 console.log(token);
 window.addEventListener("DOMContentLoaded", () => {
   for (let i = 0; i < 76; i++) {
@@ -17,6 +18,13 @@ window.addEventListener("DOMContentLoaded", () => {
 
 button.onclick = function () {
   let randomNum = Math.ceil(Math.random() * token.length);
+  randomToken.push(randomNum);
+
+  for (let i = 0; i < token.length; i++) {
+    if (randomNum === parseInt(token[i].textContent, -1)) {
+      token[i].classList.add("past-Num");
+    }
+  }
   console.log(randomNum);
 };
 // const buttonn = function () {
