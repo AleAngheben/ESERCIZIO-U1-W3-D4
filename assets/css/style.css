@@ -1,0 +1,36 @@
+h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+#tabellone {
+  width: 70%;
+  background-color: beige;
+  margin-inline: auto;
+  padding: 1.2rem;
+}
+
+.casella {
+  background-color: antiquewhite;
+  margin-block: 1rem;
+  padding: 1.3rem;
+  padding-block: 2.3rem;
+  text-align: center;
+  width: 10%;
+  display: inline-block;
+  border-radius: 50%;
+  font-size: x-large;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+#genButton {
+  display: block;
+  margin-inline: auto;
+  margin-top: 3rem;
+  padding: 1.2rem;
+}
+
+.pastNums {
+  background-color: red;
+}
