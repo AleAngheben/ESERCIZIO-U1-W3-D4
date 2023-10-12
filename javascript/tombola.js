@@ -3,8 +3,8 @@ const button = document.getElementById("genButton");
 
 let token = [];
 console.log(token);
-const createBox = function (tokens) {
-  for (let i = 0; i < tokens; i++) {
+window.addEventListener("DOMContentLoaded", () => {
+  for (let i = 0; i < 76; i++) {
     token.push(i + 1);
     const myBox = document.createElement("div");
     myBox.classList.add("casella");
@@ -13,19 +13,26 @@ const createBox = function (tokens) {
     myBox.appendChild(boxNum);
     tabellone.appendChild(myBox);
   }
-};
-console.log(createBox(76));
+});
 
 button.onclick = function () {
-  const randomNum = Math.ceil(Math.random() * 76);
-  for (let i = 0; i < token.length; i++) {
-    if (randomNum === token[i]) {
-      token[i].style.backgroundColor = "red";
-    }
-  }
-
+  let randomNum = Math.ceil(Math.random() * token.length);
   console.log(randomNum);
 };
+// const buttonn = function () {
+//   let randomNum = Math.ceil(Math.random() * token.length);
+//   const colorNum = function () {
+//     for (let i = 0; i < token.length; i++) {
+//       if (randomNum === token[i] + 1) {
+//         token[i].classList("pastNum");
+//       }
+//     }
+//     return colorNum;
+//   };
+// };
+
+// button.addEventListener("click", buttonn);
+
 //     if (randomNum == parseInt.boxNum) {
 //       myBox.classList.add("pastNums");
 //     }
